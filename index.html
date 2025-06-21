@@ -11,29 +11,65 @@
         <div id = "main">
             <input type="text" id="display" disabled>
             <div id="buttons">
-                <button class="btn" id="clear">C</button>
-                <button class="btn" id="one">1</button>
-                <button class="btn" id="two">2</button>
-                <button class="btn" id="add">+</button>
-                <button class="btn" id="three">3</button>
-                <button class="btn" id="four">4</button>
-                <button class="btn" id="subtract">-</button>
-                <button class="btn" id="five">5</button>
-                <button class="btn" id="six">6</button>
-                <button class="btn" id="multiply">*</button>
-                <button class="btn" id="seven">7</button>
-                <button class="btn" id="eight">8</button>
-                <button class="btn" id="divide">/</button>
-                <button class="btn" id="equals">=</button>
-                <button class="btn" id="nine">9</button>
-                <button class="btn" id="zero">0</button>
-                <button class="btn" id="dot">.</button>
-                <button class="btn" id="backspace">←</button>
+                <button class="btn" id="clear" onclick = " currentVal = ' ';
+                document.querySelector('#display').value = currentVal; " >C</button>
+                
+                <button class="btn" id="one" onclick=" currentVal += '1';
+                document.querySelector('#display').value = currentVal;">1</button>
+
+                <button class="btn" id="two" onclick=" currentVal += '2';
+                document.querySelector('#display').value = currentVal;">2</button>
+                
+                <button class="btn" id="add" onclick=" currentVal += '+';
+                document.querySelector('#display').value = currentVal;" >+</button>
+                
+                <button class="btn" id="three" onclick=" currentVal += '3';
+                document.querySelector('#display').value = currentVal;" >3</button>
+                
+                <button class="btn" id="four" onclick=" currentVal += '4';
+                document.querySelector('#display').value = currentVal;" >4</button>
+                
+                <button class="btn" id="subtract" onclick=" currentVal += '-';
+                document.querySelector('#display').value = currentVal;" >-</button>
+                
+                <button class="btn" id="five" onclick=" currentVal += '5';
+                document.querySelector('#display').value = currentVal;" >5</button>
+                
+                <button class="btn" id="six" onclick=" currentVal += '6';
+                document.querySelector('#display').value = currentVal;" >6</button>
+                
+                <button class="btn" id="multiply" onclick=" currentVal += '*';
+                document.querySelector('#display').value = currentVal;" >*</button>
+                
+                <button class="btn" id="seven" onclick=" currentVal += '7';
+                document.querySelector('#display').value = currentVal;" >7</button>
+                
+                <button class="btn" id="eight" onclick=" currentVal += '8';
+                document.querySelector('#display').value = currentVal;" >8</button>
+                
+                <button class="btn" id="divide" onclick=" currentVal += '/';
+                document.querySelector('#display').value = currentVal;" >/</button>
+                
+                <button class="btn" id="equals" onclick=" let result = eval(currentVal);
+                currentVal = result;
+                document.querySelector('#display').value = currentVal;" >=</button>
+                
+                <button class="btn" id="nine" onclick=" currentVal += '9';
+                document.querySelector('#display').value = currentVal;" >9</button>
+                
+                <button class="btn" id="zero" onclick=" currentVal += '0';
+                document.querySelector('#display').value = currentVal;" >0</button>
+                
+                <button class="btn" id="dot" onclick=" currentVal += '.';
+                document.querySelector('#display').value = currentVal;" >.</button>
+                
+                <button class="btn" id="backspace" onclick=" currentVal += '←';
+                document.querySelector('#display').value = currentVal;" >←</button>
         </div>
     </main>
 
     <script>
-        let currentVal = 'ssss';
+        let currentVal = '';
         document.querySelector('#display').value = currentVal;
     </script>
 </body>
