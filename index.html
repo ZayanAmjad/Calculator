@@ -63,7 +63,7 @@
                 <button class="btn" id="dot" onclick=" currentVal += '.';
                 document.querySelector('#display').value = currentVal;" >.</button>
                 
-                <button class="btn" id="backspace" onclick=" currentVal += '←';
+                <button class="btn" id="backspace" onclick=" currentVal = currentVal.slice(0, -1);
                 document.querySelector('#display').value = currentVal;" >←</button>
         </div>
     </main>
