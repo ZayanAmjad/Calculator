@@ -1,0 +1,32 @@
+#main{
+    background-color: lightgray;
+    border: 1px solid lightcoral;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+}
+
+#display{
+    margin: 10px;
+    padding: 0px;
+    font-size: 25px;
+    width: 85%; 
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.btn:hover{
+    background-color: lightblue;
+}
